@@ -1,13 +1,10 @@
 def my_each(collection)
   iteration = 0
   while iteration < 4
-  yield
+  yield(collection[iteration])
   iteration += 1
-else
+end
   collection
 end
 end
 
-my_each(collection) do |i|
-  puts i
-end
